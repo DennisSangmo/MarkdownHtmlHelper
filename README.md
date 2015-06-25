@@ -6,11 +6,20 @@
 
 # MarkdownHtmlHelper
 
-[![nuget package](https://badge.fury.io/nu/MarkdownHtmlHelper.png)](http://badge.fury.io/nu/MarkdownHtmlHelper)
+[![][build-img]][build]
+[![][nuget-img]][nuget]
 
 ASP.NET MVC HTML Helper that renders Markdown content in Razor views.
 
-**Note:** if you need something more straightforward consider using [MarkdownViewEngine](https://github.com/tallesl/MarkdownViewEngine).
+**Note:** if you need something more straightforward consider using [MarkdownViewEngine][MarkdownViewEngine].
+
+[build]:     https://ci.appveyor.com/project/TallesL/MarkdownHtmlHelper
+[build-img]: https://ci.appveyor.com/api/projects/status/github/tallesl/MarkdownHtmlHelper
+
+[nuget]:     http://badge.fury.io/nu/MarkdownHtmlHelper
+[nuget-img]: https://badge.fury.io/nu/MarkdownHtmlHelper.png
+
+[MarkdownViewEngine]: https://github.com/tallesl/MarkdownViewEngine
 
 ## Usage
 
