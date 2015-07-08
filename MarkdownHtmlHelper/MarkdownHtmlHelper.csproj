@@ -32,8 +32,8 @@
     <DocumentationFile>bin\Release\MarkdownHtmlHelper.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MarkdownSharp">
-      <HintPath>..\packages\MarkdownSharp.1.13.0.0\lib\35\MarkdownSharp.dll</HintPath>
+    <Reference Include="CommonMark">
+      <HintPath>..\packages\CommonMark.NET.0.9.1\lib\net40-client\CommonMark.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>

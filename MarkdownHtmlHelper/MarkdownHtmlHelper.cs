@@ -1,20 +1,15 @@
 ﻿namespace MarkdownHtmlHelper
 {
+    using CommonMark;
     using System.IO;
     using System.Web;
     using System.Web.Mvc;
-    using MarkdownSharp;
 
     /// <summary>
     /// An HTML Helper that renders markdown.
     /// </summary>
     public static class MarkdownHelper
     {
-        /// <summary>
-        /// SO's markdown parser.
-        /// </summary>
-        private static readonly Markdown _parser = new Markdown();
-
         /// <summary>
         /// Reads the content of the given file path, interprets as markdown and renders the equivalent HTML.
         /// </summary>
@@ -34,7 +29,7 @@
                 var dir = Path.GetDirectoryName(viewPath);
                 var fullpath = Path.Combine(dir, path);
                 var unparsed = File.ReadAllText(fullpath);
-                var parsed = _parser.Transform(unparsed);
+                var parsed = CommonMarkConverter.Convert(unparsed);
                 return new MvcHtmlString(parsed);
             }
         }
